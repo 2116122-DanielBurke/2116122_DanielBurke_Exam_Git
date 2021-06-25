@@ -12,7 +12,7 @@ public class Final : MonoBehaviour
     public Sprite image01, image02, image03;
     string hhMM;
     int scoreInt = 100;
-    public Button accuse;
+    
 
     [SerializeField] string nameString, option1, option2, option3;
     [SerializeField] List<string>ev1String;
@@ -54,39 +54,39 @@ public class Final : MonoBehaviour
       
         if(nameText.text == nameString)
         {
-            susName.text = "You chose" + nameString;
+            susName.text = "You chose: " + nameString;
         }
         else
         {
-            susName.text = "You chose" + nameText;
+            susName.text = "You chose: " + nameText.text;
             scoreInt -= 25;            
         }
         if (ev1String.Contains(d1text.text))
         {
-            ev1.text = "You chose" + d1text;
+            ev1.text = "You chose " + d1text.text;
             scoreInt -= 25;
         }
         else
         {
-            ev1.text = "You chose" + d1text;
+            ev1.text = "You chose: " + d1text.text;
         }
         if (ev2String.Contains(d2text.text))
         {
-            ev2.text = "You chose" + d2text;
+            ev2.text = "You chose: " + d2text.text;
             
         }
         else
         {
             scoreInt -= 25;
-            ev2.text = "You chose" + d2text.text;
+            ev2.text = "You chose: " + d2text.text;
         } if (ev3String.Contains(d3text.text))
         {
 
-            ev3.text = "You chose" + d3text;
+            ev3.text = "You chose: " + d3text.text;
         }
         else
         {
-            ev3.text = "You chose" + d3text.text;
+            ev3.text = "You chose: " + d3text.text;
             scoreInt -= 25;
         }
         scoreText.text = "" + scoreInt;

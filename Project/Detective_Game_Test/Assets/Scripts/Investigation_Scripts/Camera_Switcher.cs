@@ -40,12 +40,13 @@ public class Camera_Switcher : MonoBehaviour
         cam2.tag = "Untagged";
         cam3.tag = "Untagged";
         cam4.tag = "Untagged";
+        cam5.tag = "Untagged";
 
         cam1.enabled = true;
         cam2.enabled = false;
         cam3.enabled = false;
         cam4.enabled = false;
-
+        cam5.enabled = false;
         light.transform.position = cam1.transform.position;
         light.transform.rotation = cam1.transform.rotation;
         
@@ -56,11 +57,12 @@ public class Camera_Switcher : MonoBehaviour
         cam2.tag = "MainCamera";
         cam3.tag = "Untagged";
         cam4.tag = "Untagged";
-
+        cam5.tag = "Untagged";
         cam1.enabled = false;
         cam2.enabled = true;
         cam3.enabled = false;
         cam4.enabled = false;
+        cam5.enabled = false;
 
         light.transform.position = cam2.transform.position;
         light.transform.rotation = cam2.transform.rotation;
@@ -72,12 +74,12 @@ public class Camera_Switcher : MonoBehaviour
         cam2.tag = "Untagged";
         cam3.tag = "MainCamera";
         cam4.tag = "Untagged";
-
+        cam5.tag = "Untagged";
         cam1.enabled = false;
         cam2.enabled = false;
         cam3.enabled = true;
         cam4.enabled = false;
-
+        cam5.enabled = false;
         light.transform.position = cam3.transform.position;
         light.transform.rotation = cam3.transform.rotation;
        
@@ -88,12 +90,12 @@ public class Camera_Switcher : MonoBehaviour
         cam2.tag = "Untagged";
         cam3.tag = "Untagged";
         cam4.tag = "MainCamera";
-
+        cam5.tag = "Untagged";
         cam1.enabled = false;
         cam2.enabled = false;
         cam3.enabled = false;
         cam4.enabled = true;
-
+        cam5.enabled = false;
         light.transform.position = cam4.transform.position;
         light.transform.rotation = cam4.transform.rotation;
         
@@ -103,8 +105,8 @@ public class Camera_Switcher : MonoBehaviour
         cam1.tag = "Untagged";
         cam2.tag = "Untagged";
         cam3.tag = "Untagged";
-        cam4.tag = "MainCamera";
-        cam5.tag = "MainCamra";
+        cam4.tag = "Untagged";
+        cam5.tag = "MainCamera";
 
         cam1.enabled = false;
         cam2.enabled = false;
